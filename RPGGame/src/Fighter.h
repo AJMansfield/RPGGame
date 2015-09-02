@@ -14,17 +14,17 @@ class Fighter: public FighterInterface {
 public:
 	Fighter();
 	virtual ~Fighter();
-	string getName() = 0;
-	int getMaximumHP() = 0;
-	int getCurrentHP() = 0;
-	int getStrength() = 0;
-	int getSpeed() = 0;
-	int getMagic() = 0;
-	int getDamage() = 0;
-	void takeDamage(int damage) = 0;
-	void reset() = 0;
-	void regenerate() = 0;
-	bool useAbility() = 0;
+	virtual string getName() = 0;
+	virtual int getMaximumHP() = 0;
+	virtual int getCurrentHP() = 0;
+	virtual int getStrength() = 0;
+	virtual int getSpeed() = 0;
+	virtual int getMagic() = 0;
+	virtual int getDamage() = 0;
+	virtual void takeDamage(int damage) = 0;
+	virtual void reset() = 0;
+	virtual void regenerate() = 0;
+	virtual bool useAbility() = 0;
 };
 
 #endif /* FIGHTER_H_ */

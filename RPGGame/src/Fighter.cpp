@@ -12,38 +12,38 @@ Fighter::Fighter() {
 
 }
 
-Fighter::~Fighter() {
+virtual Fighter::~Fighter() {
 	// TODO Auto-generated destructor stub
 }
 
-string Fighter::getName(){
-	return "None";
+virtual string Fighter::getName(){
+	return "None"; //TODO Implement this.
 }
-int Fighter::getMaximumHP(){
+virtual int Fighter::getMaximumHP(){
     return 0; //TODO Implement this.
 }
-int Fighter::getCurrentHP(){
+virtual int Fighter::getCurrentHP(){
     return 0; //TODO Implement this.
 }
-int Fighter::getStrength(){
+virtual int Fighter::getStrength(){
     return 0; //TODO Implement this.
 }
-int Fighter::getSpeed(){
+virtual int Fighter::getSpeed(){
     return 0; //TODO Implement this.
 }
-int Fighter::getMagic(){
+virtual int Fighter::getMagic(){
     return 0; //TODO Implement this.
 }
-int Fighter::getDamage(){
+virtual int Fighter::getDamage(){
     return 0; //TODO Implement this.
 }
-void Fighter::takeDamage(int damage){
+virtual void Fighter::takeDamage(int damage){
 }
-void Fighter::reset(){
+virtual void Fighter::reset(){
 }
-void Fighter::regenerate(){
+virtual void Fighter::regenerate(){
 }
-bool Fighter::useAbility(){
+virtual bool Fighter::useAbility(){
 	return false; //TODO Implement this
 }
 

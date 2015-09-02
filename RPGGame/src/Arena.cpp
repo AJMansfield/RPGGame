@@ -17,7 +17,7 @@ Arena::~Arena() {
 }
 
 bool Arena::addFighter(string info) {
-	fighters[info] = Fighter();
+	return fighters.insert(pair<string,FighterInterface*>(info,NULL)).second;
 }
 
 bool Arena::removeFighter(string info) {
@@ -25,7 +25,7 @@ bool Arena::removeFighter(string info) {
 }
 
 FighterInterface* Arena::getFighter(string info) {
-	return NULL;
+	return fighters.at(info);
 }
 
 int Arena::getSize() {
