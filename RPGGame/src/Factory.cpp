@@ -16,6 +16,6 @@ using namespace std;
  */
 ArenaInterface* Factory::createArena()
 {
-	return NULL;//Modify this line
+	return new Arena();//Modify this line
 }
 //=======================================================================================

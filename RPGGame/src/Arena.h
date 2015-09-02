@@ -19,7 +19,8 @@ public:
 	bool removeFighter(string info);
 	FighterInterface* getFighter(string info);
 	int getSize();
-	std::map<string, FighterInterface*> fighters = map();
+private:
+	map<string, FighterInterface*> fighters;
 };
 
 #endif /* ARENA_H_ */
